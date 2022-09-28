@@ -27,6 +27,8 @@ However, the sales team has the capacity to make 20 thousand calls within the ca
 
 *Predicting whether or not the customer would be interested in auto insurance.*
 
+in progress
+
 <br>
 
 ## 💾 Data Understanding
@@ -42,7 +44,8 @@ However, the sales team has the capacity to make 20 thousand calls within the ca
 
  ### - Importing Dataset:
 
-* Kaggle: https://www.kaggle.com/competitions/rossmann-store-sales/data
+* Kaggle: https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction or
+* AWS: Postgres Login.
 
 <br>
 
