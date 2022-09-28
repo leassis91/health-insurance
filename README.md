@@ -1,5 +1,8 @@
 # Health Insurance Cross-Sell
 
+![image](https://user-images.githubusercontent.com/67332395/192871886-1a546e1d-1330-40a0-a661-e1b71b8e0671.png)
+
+
 ## Project designed to rank customers interested in purchasing a vehicle insurance.
 
 #### This project was made by Leandro Destefani.
