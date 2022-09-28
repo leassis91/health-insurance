@@ -102,11 +102,7 @@ The approach used to solve this task was done by applying CRISP-DM¹ methodology
 
 ### - Numerical Attributes Correlation
 
-![image](https://user-images.githubusercontent.com/67332395/175460617-43a48c17-d3e0-4d05-9c86-b7d7be891572.png)
-
 ### - Categorical Attributes Correlation
-
-![image](https://user-images.githubusercontent.com/67332395/175460670-83e08358-dd8f-432a-ad87-51037abe5fad.png)
 
 ### - Main Hypothesis Chosen
 
