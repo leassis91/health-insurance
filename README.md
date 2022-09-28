@@ -50,21 +50,18 @@ However, the sales team has the capacity to make 20 thousand calls within the ca
 
 | Variable                       | Descriptions                                                      |
 | -------------------------------- | ------------------------------------------------------------ |
-| Id                               | An id that represents a (store, date) duple within the test set|
-| Store                            | A unique id for each store                                   |
-| Sales                            | The turnover for any given day                          |
-| Customers                        | The number of customers on a given day                       |
-| Open                             | An indicator for whether the store was open: 0 = closed, 1 = open |
-| Stateholiday                     | Indicates a state holiday. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. A = public holiday, b = easter holiday, c = christmas, 0 = none |
-| Schoolholiday                    | Indicates if the (store, date) was affected by the closure of public schools |
-| Storetype                        | Differentiates between 4 different store models: a, b, c, d  |
-| Assortment                       | Describes an assortment level: a = basic, b = extra, c = extended |
-| Competitiondistance              |Distance in meters to the nearest competitor store           |
-| Competitionopensince[month/year] | Gives the approximate year and month of the time the nearest competitor was opened |
-| Promo                            | Indicates whether a store is running a promo on that day        |
-| Promo2                           | Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating |
-| Promo2since[year/week]           | Describes the year and calendar week when the store started participating in promo2 |
-| Promointerval                    | Describes the consecutive intervals promo2 is started, naming the months the promotion is started anew. E.G. "Feb,may,aug,nov" means each round starts in february, may, august, november of any given year for that store |
+| Id                               | Unique customer identifier. |
+| Gender                           | Customer's gender.                                   |
+| Age                              | Customer's age.                             |
+| Driving License                  | An indicator for whether a customer has a driving license.                      |
+| Region Code                      | Customer's region code. |
+| Previously Insured               | An indicator if a customer already had an auto insurance. |
+| Vehicle Age                      | Customer's vehicle age. |
+| Vehicle Damage                   | An indicator for whether a customer had previous damage in vehicle.  |
+| Annual Premium                   | Total annual amount a customer pays for current health insurance. |
+| Policy Sales Channel             | Anonymous code for a customer contact channel.          |
+| Vintage                          | Number of days a customer was associated with the company through the purchase of health insurance. |
+| Response                         | An indicator for auto insurance purchase.        |
  
 
 
