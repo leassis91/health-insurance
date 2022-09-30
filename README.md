@@ -32,7 +32,10 @@ The survey obtained feedback from 304,000 customers about their interest in purc
 
 * Python Version : 3.10
 * Packages : Jupyter, Pandas, Numpy, Matplotlib, Seaborn, Scikit-Learn among others (please, check full list [here](https://github.com/leassis91/health-insurance/blob/master/requirements.txt))
-* Frontend API: Google Sheets Script
+* Coggle Mindmaps
+* [SweetViz](https://pypi.org/project/sweetviz/)
+* [Optuna](https://optuna.org/) - A hyperparameter optimization framework
+* Frontend API: [Google Sheets Script](https://docs.google.com/spreadsheets/d/10Jjy_Iil6XGr7A3X0B3_fJEuFlBTCxRktnQhQkJh9Kg/edit#gid=862044370)
 * Backend: Heroku
 
 <br>
@@ -122,17 +125,17 @@ The approach used to solve this task was done by applying CRISP-DM¹ methodology
 
 ### Hypothesis Creation Map
 
-![image](https://user-images.githubusercontent.com/67332395/193338010-3cb13048-a011-4940-a8e8-f20886786e1c.png)
+<img src="https://user-images.githubusercontent.com/67332395/193338010-3cb13048-a011-4940-a8e8-f20886786e1c.png" width=65% height=60%/>
 
 
 ### - Numerical Attributes Correlation
 
-![image](https://user-images.githubusercontent.com/67332395/193337884-7b66c5b9-e569-48c6-ba83-c4ade9b95585.png)
+<img src="https://user-images.githubusercontent.com/67332395/193337884-7b66c5b9-e569-48c6-ba83-c4ade9b95585.png" width=55% height=55%/>
 
 
 ### - Categorical Attributes Correlation
 
-![image](https://user-images.githubusercontent.com/67332395/193337934-2974b53f-f9f9-4f8c-a968-da3557cf9adf.png)
+<img src="https://user-images.githubusercontent.com/67332395/193337934-2974b53f-f9f9-4f8c-a968-da3557cf9adf.png" width=60% height=60%/>
 
 
 ### - Main Insights
@@ -140,26 +143,46 @@ The approach used to solve this task was done by applying CRISP-DM¹ methodology
 Insights are information that are new or that break beliefs previously established of the business team. They are also actionable, enabling action to drive future results.
 
 - **Hypothesis 1:** *Higher interest in FEMALE customers.*
+
 A: False. We could observe a significant higher interest in male customers.
 
-![image](https://user-images.githubusercontent.com/67332395/193344924-c9aa476c-c194-4093-b6f8-d548b5be0d98.png)
+<img src='https://user-images.githubusercontent.com/67332395/193344924-c9aa476c-c194-4093-b6f8-d548b5be0d98.png' width=80% height=80%/>
 
 
 - **Hypothesis 2:** *Higher interest in customers who had VEHICLE PREVIOUSLY DAMAGED.*
+
 A: True. Almost no one who didn't have your vehicle damaged having any interest in a insurance.
 
-![image](https://user-images.githubusercontent.com/67332395/193345025-13958da5-296c-4eb4-a275-65b2aae3e790.png)
+<img src='https://user-images.githubusercontent.com/67332395/193345025-13958da5-296c-4eb4-a275-65b2aae3e790.png' width=80% height=80%/>
 
    
 - **Hypothesis 3:** *Higher interest in LONGER CUSTOMERS.*
+
 A: False. Interets didn't show any correlation between old clients.
 
-![image](https://user-images.githubusercontent.com/67332395/193345395-5e29d52d-a624-450e-ab15-7ecff7eb9300.png)
+<img src="https://user-images.githubusercontent.com/67332395/193345395-5e29d52d-a624-450e-ab15-7ecff7eb9300.png" width=80% height=80%/>
 
 <br>
 
 ## 💻 Machine Learning Modeling & Evaluation
 
+For measuring the performance of the models we will use the cross-validation method which prevents the model from overfitting when the model receives some data that he has never seen before. The @K for the metrics of Ranking-To-Learn approach is 20.000 and will better explained in the business results in the next section.
+
+|Model Name				|Accuracy Balanced  |Precision @K Mean	|Recall @K Mean |	ROC AUC Score	|Top K Score|
+|	:---:					|			:--:		|			:--:		|			:--:	|		:--:			|		:--:	|
+|**LGBM Classifier**		|	0.501066	|0.307935	|	**0.828112	**	|**0.853336**	|0.877706|
+|**Cat Boost Classifier **		|	0.507893	| 0.305995	|	**0.822895**	|**0.850966**	|0.876744|
+|**XGB Classifier**			|	0.511982		|	0.305255		|	**0.820905**	|	**0.849166**		|0.876341	|
+|**Random Forest Classifier**	|	0.542660		|	0.289416		|	**0.778310**	|	0.829445		|0.865662	|
+| GaussianNB 			|	0.783939		|	0.288646		|	0.776239	|	0.825829		| 0.637886	|
+| Logistic Regression		|	0.500000		|	0.274926		|	0.739344	|	0.817501		| 0.878030	|
+| K-Nearest Neighbors Classifier	|	0.557291		|	0.268607	    |	0.722349	|	0.752549	| 0.856038 |
+
+In all scenarios, LGBM, CatBoost and XGBoost Classifiers had the best performance, so we chose the model with best size-speed ratio: LGBM model. Then, we proceeded to the Hyperparameter Fine-Tuning step, using Optuna Framework.
+
+|Model Name	|ROC AUC	|Top @K Acc|
+|--: |--:| --:|
+|XGB Classifier Tuned |	0.857739|	0.878526|
 
 <br>
 
