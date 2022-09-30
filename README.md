@@ -170,19 +170,21 @@ For measuring the performance of the models we will use the cross-validation met
 
 |Model Name				|Accuracy Balanced  |Precision @K Mean	|Recall @K Mean |	ROC AUC Score	|Top K Score|
 |	:---:					|			:--:		|			:--:		|			:--:	|		:--:			|		:--:	|
-|**LGBM Classifier**		|	0.501066	|0.307935	|	**0.828112	**	|**0.853336**	|0.877706|
-|**Cat Boost Classifier **		|	0.507893	| 0.305995	|	**0.822895**	|**0.850966**	|0.876744|
+|**LGBM Classifier**		|	0.501066	|0.307935	|	**0.828112**	| **0.853336**	|0.877706|
+|**Cat Boost Classifier**		|	0.507893	| 0.305995	|	**0.822895**	| **0.850966**	|0.876744|
 |**XGB Classifier**			|	0.511982		|	0.305255		|	**0.820905**	|	**0.849166**		|0.876341	|
 |**Random Forest Classifier**	|	0.542660		|	0.289416		|	**0.778310**	|	0.829445		|0.865662	|
 | GaussianNB 			|	0.783939		|	0.288646		|	0.776239	|	0.825829		| 0.637886	|
 | Logistic Regression		|	0.500000		|	0.274926		|	0.739344	|	0.817501		| 0.878030	|
 | K-Nearest Neighbors Classifier	|	0.557291		|	0.268607	    |	0.722349	|	0.752549	| 0.856038 |
 
-In all scenarios, LGBM, CatBoost and XGBoost Classifiers had the best performance, so we chose the model with best size-speed ratio: LGBM model. Then, we proceeded to the Hyperparameter Fine-Tuning step, using Optuna Framework.
+In all scenarios, LGBM, CatBoost and XGBoost Classifiers had the best performance, so we chose the model with best size-speed ratio: LGBM model. Then, we proceeded to the Hyperparameter Fine-Tuning step, using Optuna Framework. 
 
-|Model Name	|ROC AUC	|Top @K Acc|
+|Model Name|Recall @K Mean |ROC AUC	|Top @K Acc|
 |--: |--:| --:|
-|XGB Classifier Tuned |	0.857739|	0.878526|
+|LGBM Classifier Tuned | 0.827252	| 0.852081 |	0.877505 |
+
+*Note that for this optimization we used "Recall" as metric to better find positive interested customers.*
 
 <br>
 
