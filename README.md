@@ -114,25 +114,47 @@ The approach used to solve this task was done by applying CRISP-DM¹ methodology
 8. **Hyperparameter Fine Tuning:** search for the best values for each of the parameters of the best performing model(s) selected from the previous step.
 9. **Statistical Error Analysis:** conversion of the performance metrics of the Machine Learning model to a more tangible business result.
 10. **Production Deployment:** deployment of the model in a cloud environment (Heroku), using Flask connected to our model in a pickle file.
-11. **Telegram Bot:** deployment of Telegram Bot API, here used as our user receiver. Check out at "Deployment" section.
+11. **Google Sheets Script** show our business results with some customers example in a Google Sheets. Check out at "Deployment" section.
 
 <br>
 
-## 🕵🏽‍♂️Exploratory Data Analysis & Main Insights
+## 🕵🏽‍♂️ Exploratory Data Analysis & Main Insights
+
+### Hypothesis Creation Map
+
+![image](https://user-images.githubusercontent.com/67332395/193338010-3cb13048-a011-4940-a8e8-f20886786e1c.png)
+
 
 ### - Numerical Attributes Correlation
 
+![image](https://user-images.githubusercontent.com/67332395/193337884-7b66c5b9-e569-48c6-ba83-c4ade9b95585.png)
+
+
 ### - Categorical Attributes Correlation
 
-### - Main Hypothesis Chosen
+![image](https://user-images.githubusercontent.com/67332395/193337934-2974b53f-f9f9-4f8c-a968-da3557cf9adf.png)
 
 
-- **Hypothesis 1:**
+### - Main Insights
 
-- **Hypothesis 2:** 
+Insights are information that are new or that break beliefs previously established of the business team. They are also actionable, enabling action to drive future results.
+
+- **Hypothesis 1:** *Higher interest in FEMALE customers.*
+A: False. We could observe a significant higher interest in male customers.
+
+![image](https://user-images.githubusercontent.com/67332395/193344924-c9aa476c-c194-4093-b6f8-d548b5be0d98.png)
+
+
+- **Hypothesis 2:** *Higher interest in customers who had VEHICLE PREVIOUSLY DAMAGED.*
+A: True. Almost no one who didn't have your vehicle damaged having any interest in a insurance.
+
+![image](https://user-images.githubusercontent.com/67332395/193345025-13958da5-296c-4eb4-a275-65b2aae3e790.png)
+
    
-   
-- **Hypothesis 3:** 
+- **Hypothesis 3:** *Higher interest in LONGER CUSTOMERS.*
+A: False. Interets didn't show any correlation between old clients.
+
+![image](https://user-images.githubusercontent.com/67332395/193345395-5e29d52d-a624-450e-ab15-7ecff7eb9300.png)
 
 <br>
 
