@@ -10,24 +10,19 @@
 
 *The following context is completely fictional.*
 
-Insurance All is a company that provides health insurance to its customers and the product team is analyzing the possibility of offering policyholders a new product: auto insurance.
+Insurance All is a company that provides health insurance to its customers and the product team is analyzing the possibility of offering policyholders a new product: vehicle insurance. New customers of this product will pay an amount annually to Insurance All to obtain an amount insured by the company, intended at the costs of an eventual accident or damage to the vehicle.
 
-As with health insurance, customers of this new auto insurance plan need to pay an amount annually to Insurance All to obtain an amount insured by the company, aimed at the costs of an eventual accident or damage to the vehicle.
-
-Insurance All conducted a survey of about 380,000 customers about their interest in joining a new auto insurance product last year. All customers expressed interest or not in purchasing auto insurance and these responses were saved in a database along with other customer attributes.
-
-The product team selected 127 thousand new customers who did not respond to the survey to participate in a campaign, in which they will receive the offer of the new auto insurance product. The offer will be made by the sales team through telephone calls.
-
-However, the sales team has the capacity to make 20 thousand calls within the campaign period.
+Insurance All conducted a survey for over 380,000 customers about their interest in joining a new vehicle insurance product last year. The responses results were saved in a database along with other customer attributes.
 
 <br>
 
 
 ## 📌 Problem Statement
 
-*Predicting whether or not the customer would be interested in auto insurance.*
+*Ranking customers interested in purchasing vehicle insurance.*
 
-in progress
+The survey obtained feedback from 304,000 customers about their interest in purchasing vehicle insurance. The new insurance was developed and is being offered to the interested parties. However, there are more than 76,000 customers who did not respond to the survey. The already busy call center has the capacity to contact only 20,000 of these potential customers. Therefore, we need a list ordered by interest of these 76k customers, in order to optimize the company's conversion and revenue.
+
 
 <br>
 
@@ -71,6 +66,7 @@ in progress
 <br>
 
  ### - Business Assumptions
+
 
  
  <br>
