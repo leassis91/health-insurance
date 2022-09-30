@@ -66,6 +66,18 @@ The survey obtained feedback from 304,000 customers about their interest in purc
 <br>
 
  ### - Business Assumptions
+ 
+Data Science team have to answer the following questions:
+
+- What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
+- If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
+- How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
+
+
+We have the following assumptions:
+
+- policy sales channels used were SMS, e-mail and phone calls.
+- all customers were above minimum drive age.
 
 
  
@@ -73,6 +85,18 @@ The survey obtained feedback from 304,000 customers about their interest in purc
  
 ## 🧾 Evaluation Metric
 
+Here, we are mostly using the AUC-ROC curve to evaluate our models. ROC is a probability curve and AUC represents the degree or measure of separability.
+The ROC curve is plotted with TPR (True Positive Rate) against the FPR (False Positive Rate) where TPR is on the y-axis and FPR is on the x-axis. 
+
+<div align="center">
+
+![auc](/image/AUC-ROC.jpg)
+
+![tpr](/image/TPR.jpg)
+
+![fpr](/image/FPR.jpg)
+
+</div>
 
 <br>
 
