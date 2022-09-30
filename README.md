@@ -28,7 +28,7 @@ The survey obtained feedback from 304,000 customers about their interest in purc
 
 ## 💾 Data Understanding
 
- ### - Code Used:
+ ### - Tools Used:
 
 * Python Version : 3.10
 * Packages : Jupyter, Pandas, Numpy, Matplotlib, Seaborn, Scikit-Learn among others (please, check full list [here](https://github.com/leassis91/health-insurance/blob/master/requirements.txt))
@@ -43,7 +43,7 @@ The survey obtained feedback from 304,000 customers about their interest in purc
  ### - Importing Dataset:
 
 * Kaggle: https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction or
-* AWS: Postgres Login.
+* AWS PostgresSQL
 
 <br>
 
