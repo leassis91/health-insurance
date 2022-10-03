@@ -217,30 +217,30 @@ For comparison purposes we are taking a "random" model representation, which cou
 
 |Model | People Reached | Total People Interested | Revenue |
 |:---: | :-------------:|:-----:|:----|
-| Random Model    |2428| 9256 | U$4.856.000,00|
-| Suggested Model |6671| 9526 | U$13.342.000,00|
-| Difference Between Models | 4243| ---- | U$9.138.000,00|
+| Random Model    |2.428| 9.523 | U$ 4,996,000 |
+| Suggested Model |5.892| 9.523 | U$ 11,784,000|
+| Difference Between Models | 3.464| ---- | U$ 6,788,000|
 
 ### Revenue for 40.000 calls
 
 |Model | People Reached | Total People Interested | Revenue |
 |:---: | :-------------:|:-----:|:----|
-| Random Model    |4857| 9256 | U$9.714.000,00|
-| Suggested Model |9204| 9526 | U$18.408.000,00|
-| Difference Between Models | 4347| ---- | U$8.694.000,00|
+| Random Model    |4.997| 9.523 | U$ 9,994,000 |
+| Suggested Model |9.469| 9.523 | U$ 18,938,000|
+| Difference Between Models | 4.472 | ---- | U$ 8,944,000 |
 
 ### Revenue for 80% of interest people of the dataset 
 To reach the 80% would be necessary 23.350 calls.
 
 |Model | People Reached | Total People Interested | Revenue |
 |:---: | :-------------:|:-----:|:----|
-| Random Model    |2835| 9256 | U$5.670.000,00|
-| Suggested Model |7404| 9526 | U$14.808.000,00|
-| Difference Between Models | 4569| ---- | U$9.138.000,00|
+| Random Model    |2.916| 9.523 | U$ 5,832,000  |
+| Suggested Model |7.618| 9.523 | U$ 15,236,000 |
+| Difference Between Models | 4.702 | ---- | U$ 9,404,000 |
 
 ## 💡 Conclusions
 
-Finally, it is clear that if the sales team call people without making a set of ranking, their cost and effort would be much higher. With a bunch of features that characterize potential costumers this model has shown to the team how to focus their calls to reduce costs and lift their gains.
+Gathering the results, we can conclude that making a model to rank best possible clients will clear reduce the sales team cost and effort. Also, within the deployment via spreadsheet, it makes a lot easier to simulate customer profiles, a feature that is of great value to the company.
 
 <br>
 
@@ -248,7 +248,7 @@ Finally, it is clear that if the sales team call people without making a set of 
 
 - Collect more data from clients
 - Extract more significant features for next cycle
-- Keep improving model's parameters, since Optuna optimizer uses an improved Random Search method (so not always the best are chosen);
+- Keep improving model's parameters, since Optuna optimizer uses an improved Random Search method (so not always the best are chosen)
 
 <br>
 
@@ -266,7 +266,7 @@ Finally, it is clear that if the sales team call people without making a set of 
 ## 🔗 References
 
 1. Data Science Process Alliance - [What is CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)
-2. in progress
+2. [Meaningful Metrics: Cumulative Gains and Lyft Charts](https://towardsdatascience.com/meaningful-metrics-cumulative-gains-and-lyft-charts-7aac02fc5c14)
 
 
 <br>
