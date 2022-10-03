@@ -180,8 +180,8 @@ For measuring the performance of the models we will use the cross-validation met
 
 In all scenarios, LGBM, CatBoost and XGBoost Classifiers had the best performance, so we chose the model with best size-speed ratio: LGBM model. Then, we proceeded to the Hyperparameter Fine-Tuning step, using Optuna Framework. 
 
-|Model Name|Recall @K Mean |ROC AUC	|Top @K Acc|
-|--: |--:| --:|
+|Model Name				| Recall @K Mean |	ROC AUC Score	|Top K Score|
+|	:---:					   |			:--:		       |			:--:		      |			:--:	   |
 |LGBM Classifier Tuned | 0.827252	| 0.852081 |	0.877505 |
 
 *Note that for this optimization we used "Recall" as metric to better find positive interested customers.*
@@ -190,17 +190,65 @@ In all scenarios, LGBM, CatBoost and XGBoost Classifiers had the best performanc
 
 ## 📉 Business Performance
 
+We gathered information to answer the initial business questions.
+
+- What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20,000 calls?
+
+A: The sales team would be able to reach 61,88% of people interested in purchasing a new car insurance by making 20.000 calls, which correspond to 26.24% of our validation dataset, meaning a performance 2.35 times better than a random choice.
+
+
+- If the sales team capacity increases to 40,000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
+
+A: The sales team would be able to reach 99,33% of people interested in purchasing a new car insurance by making 40.000 calls, which correspond to 52.48% of our validation dataset. Our model is 1.89 times better than a random model.
+
+- How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
+
+A: To make contact to the 80% customers interested in purchasing an auto insurance the sales team needs make 26010 calls, which correspond to 34.12% of the validation dataset.
+
 <br>
+
+- Revenue Results
+
+Considering all customers from the validation dataset, we have a total of 76.222 clients. Now, we are going to calculate the revenue that would be generated from this dataset according to the requested business questions with the fixed price of an insurance as U$ 2,000.00 per year and not putting in the matter the cost of each call to reach a client.
+
+For comparison purposes we are taking a "random" model representation, which could be a simple sorting of the list by age or some other feature-specific attribute.
+
+### Revenue for 20.000 calls
+
+|Model | People Reached | Total People Interested | Revenue |
+|:---: | :-------------:|:-----:|:----|
+| Random Model    |2428| 9256 | U$4.856.000,00|
+| Suggested Model |6671| 9526 | U$13.342.000,00|
+| Difference Between Models | 4243| ---- | U$9.138.000,00|
+
+### Revenue for 40.000 calls
+
+|Model | People Reached | Total People Interested | Revenue |
+|:---: | :-------------:|:-----:|:----|
+| Random Model    |4857| 9256 | U$9.714.000,00|
+| Suggested Model |9204| 9526 | U$18.408.000,00|
+| Difference Between Models | 4347| ---- | U$8.694.000,00|
+
+### Revenue for 80% of interest people of the dataset 
+To reach the 80% would be necessary 23.350 calls.
+
+|Model | People Reached | Total People Interested | Revenue |
+|:---: | :-------------:|:-----:|:----|
+| Random Model    |2835| 9256 | U$5.670.000,00|
+| Suggested Model |7404| 9526 | U$14.808.000,00|
+| Difference Between Models | 4569| ---- | U$9.138.000,00|
 
 ## 💡 Conclusions
 
-in progress
+Finally, it is clear that if the sales team call people without making a set of ranking, their cost and effort would be much higher. With a bunch of features that characterize potential costumers this model has shown to the team how to focus their calls to reduce costs and lift their gains.
 
 <br>
 
 ## 👣 Next steps
 
-in progress
+- Collect more data from clients
+- Extract more significant features for next cycle
+- Keep improving model's parameters, since Optuna optimizer uses an improved Random Search method (so not always the best are chosen);
 
 <br>
 
