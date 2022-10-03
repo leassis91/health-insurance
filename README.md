@@ -238,6 +238,8 @@ To reach the 80% would be necessary 23.350 calls.
 | Suggested Model |7.618| 9.523 | U$ 15,236,000 |
 | Difference Between Models | 4.702 | ---- | U$ 9,404,000 |
 
+<br>
+
 ## 💡 Conclusions
 
 Gathering the results, we can conclude that making a model to rank best possible clients will clear reduce the sales team cost and effort. Also, within the deployment via spreadsheet, it makes a lot easier to simulate customer profiles, a feature that is of great value to the company.
