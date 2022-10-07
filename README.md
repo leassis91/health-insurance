@@ -279,6 +279,7 @@ Gathering the results, we can conclude that making a model to rank best possible
 
 1. Data Science Process Alliance - [What is CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)
 2. [Meaningful Metrics: Cumulative Gains and Lyft Charts](https://towardsdatascience.com/meaningful-metrics-cumulative-gains-and-lyft-charts-7aac02fc5c14)
+3. [Precision and Recall At K for Recommender Systems](https://medium.com/@m_n_malaeb/recall-and-precision-at-k-for-recommender-systems-618483226c54)
 
 
 <br>
