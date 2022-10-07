@@ -88,7 +88,17 @@ We have the following assumptions:
  
 ## 🧾 Evaluation Metric
 
-Here, we are mostly using the AUC-ROC curve to evaluate our models. ROC is a probability curve and AUC represents the degree or measure of separability.
+Here, we are going to use 2 approaches: Precision and Recall at K combined with the AUC-ROC curve to evaluate our models. 
+
+"Precision at K" is the proportion of recommended customers in the top-K set that are relevant. "Recall at K" is the proportion of relevant customers found in the top-K recommendations.
+
+<div align="center">
+
+![image](https://user-images.githubusercontent.com/67332395/194605671-30fe5232-f78e-4f05-9f12-9fac420b3dd2.png)
+
+</div>
+
+ ROC is a probability curve and AUC represents the degree or measure of separability.
 The ROC curve is plotted with TPR (True Positive Rate) against the FPR (False Positive Rate) where TPR is on the y-axis and FPR is on the x-axis. 
 
 <div align="center">
@@ -166,7 +176,7 @@ A: False. Interets didn't show any correlation between old clients.
 
 ## 💻 Machine Learning Modeling & Evaluation
 
-For measuring the performance of the models we will use the cross-validation method which prevents the model from overfitting when the model receives some data that he has never seen before. The @K for the metrics of Ranking-To-Learn approach is 20.000 and will better explained in the business results in the next section.
+For measuring the performance of the models we will use the cross-validation method which prevents the model from overfitting when the model receives some data that he has never seen before. The @K for the metrics of Learning-To-Rank approach is 20.000 and will better explained in the business results in the next section.
 
 |Model Name				|Accuracy Balanced  |Precision @K Mean	|Recall @K Mean |	ROC AUC Score	|Top K Score|
 |	:---:					|			:--:		|			:--:		|			:--:	|		:--:			|		:--:	|
